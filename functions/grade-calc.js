@@ -8,16 +8,16 @@ let scoreCalculator = (score, total) => {
   let gradeLetter = "";
 
   switch (true) {
-    case gradePercent >= 90 && gradePercent <= 100:
+    case gradePercent >= 90:
       gradeLetter = "A";
       break;
-    case gradePercent >= 80 && gradePercent <= 89:
+    case gradePercent >= 80:
       gradeLetter = "B";
       break;
-    case gradePercent >= 70 && gradePercent <= 79:
+    case gradePercent >= 70:
       gradeLetter = "C";
       break;
-    case gradePercent >= 60 && gradePercent <= 69:
+    case gradePercent >= 60:
       gradeLetter = "D";
       break;
     default:

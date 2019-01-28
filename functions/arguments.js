@@ -23,8 +23,12 @@ let tipCalculator = (bill, tipPercent = 0.2) => {
   return bill * tipPercent;
 };
 
-let defaultTip = tipCalculator(100);
-let cheapTip = tipCalculator(20, 0.10);
+let bill = 100.99;
+let tipPercent = 0.3;
+let myTip = tipCalculator(bill, tipPercent);
 
-console.log(defaultTip);
-console.log(cheapTip);
+console.log(`A ${tipPercent * 100}% tip on $${bill} would be $${myTip}`);
+
+let name = "Frank";
+let age = 40;
+console.log(`Hello my name is ${name} and I am ${age} years old.`);

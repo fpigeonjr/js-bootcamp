@@ -21,3 +21,23 @@ let bookSummary = getSummary(myBook);
 let otherBookSummary = getSummary(otherBook);
 
 console.log(bookSummary.pageCountSummary);
+
+// challenge
+// create function  - take farenheit in - return object with all three
+
+let far = 32;
+
+let fahrenheitConverter = far => {
+  return {
+    fahrenheit: far,
+    celsius: (far - 32) * (5 / 9),
+    kelvin: (far + 459.67) * (5 / 9)
+  };
+};
+
+let myTemp = fahrenheitConverter(far);
+console.log(
+  `${myTemp.fahrenheit} fahrenheit is ${myTemp.celsius} celsius or ${
+    myTemp.kelvin
+  } kelvin`
+);
